@@ -17,3 +17,9 @@ class Item:
     def mark_as_done(self):
     
         self.is_done = True
+        
+    def __str_(self, detalis):
+    
+        if details:
+            return self.name + ':\n' + self.description
+        return self.name
