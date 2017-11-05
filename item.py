@@ -18,7 +18,7 @@ class Item:
     
         self.is_done = True
         
-    def __str_(self, detalis):
+    def __str__(self, details):
     
         if details:
             return self.name + ':\n' + self.description

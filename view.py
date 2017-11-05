@@ -35,12 +35,12 @@ def add_item(list_of_items):
         print('Too long!')
     list_of_items.add_item(name, description)
     
-def modify_item(list_of_items)
+def modify_item(list_of_items):
     while True:
         print(list_of_items)
         inp = input('Which item you want to modify?')
         if inp.isdigit():
-            if int(inp) > len(list_of_items) and not inp == '0':
+            if int(inp) > len(list_of_items.list) and not inp == '0':
                 print('There is no such item!')
                 continue
             index = int(inp) - 1
@@ -69,42 +69,42 @@ def modify_item(list_of_items)
             print('Too long!')
         list_of_items.list[index].modify_description(description)
     
-def delete_item(list_of_items)
+def delete_item(list_of_items):
     while True:
         print(list_of_items)
         inp = input('Which item you want to delete?')
         if inp.isdigit():
-            if int(inp) > len(list_of_items) and not inp == '0':
+            if int(inp) > len(list_of_items.list) and not inp == '0':
                 print('There is no such item!')
                 continue
             index = int(inp) - 1
             break
     list_of_items.del_item(list_of_items.list[index].name)
     
-def mark_item(list_of_items)
+def mark_item(list_of_items):
     while True:
         print(list_of_items)
         inp = input('Which item you want to mark as completed?')
         if inp.isdigit():
-            if int(inp) > len(list_of_items) and not inp == '0':
+            if int(inp) > len(list_of_items.list) and not inp == '0':
                 print('There is no such item!')
                 continue
             index = int(inp) - 1
             break
     list_of_items.list[index].mark_as_completed()
     
-def display_list(list_of_items)
+def display_list(list_of_items):
     print('List:\n', list_of_items)
     
-def display_details(list_of_items)
+def display_details(list_of_items):
     while True:
         print(list_of_items)
         inp = input('Which item details you want to see?')
         if inp.isdigit():
-            if int(inp) > len(list_of_items) and not inp == '0':
+            if int(inp) > len(list_of_items.list) and not inp == '0':
                 print('There is no such item!')
                 continue
             index = int(inp) - 1
             break
-    list_of_items.list[index].__str__(True)
+    print(list_of_items.list[index].__str__(True))
 

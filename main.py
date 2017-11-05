@@ -21,7 +21,7 @@ def main():
             display_list(list_of_items)
         elif inp == '6':
             display_details(list_of_items)
-        else
+        else:
             break
 
 if __name__ == '__main__':

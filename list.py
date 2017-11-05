@@ -1,4 +1,4 @@
-from item.py import Item
+from item import Item
 
 class ListOfItems:
 
