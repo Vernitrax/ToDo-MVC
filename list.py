@@ -17,10 +17,10 @@ class ListOfItems:
     def __str__(self):
     
         string = ''
-        index = 0
+        index = 1
         
         for item in self.list:
-            string += str(index) + ') ' + item.__str__(False)
+            string += str(index) + ') ' + item.__str__(False) + '\n'
             index += 1
             
         return string
